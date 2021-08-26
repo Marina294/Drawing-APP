@@ -10,4 +10,4 @@ Desktop Only.
 Demo
 https://drawing-time.netlify.app/
 
-![app](/simages/git.png)
+![app](/images/git.png)
