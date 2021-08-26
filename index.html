@@ -5,45 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/colorjoe.css">
+    <link rel="shortcut icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Wallpoet&display=swap" rel="stylesheet">
     <title>Drawing Time!</title>
+    <script src="./js/colorjoe.min.js"></script>
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <h1>Drawing Time!</h1>
-    <div>
-      <span id="layerd-canvas-area">
-        <canvas
-          id="draw-area"
-          width="400px"
-          height="400px"
-          style="border: 1px solid #000000; position: absolute;"></canvas>
-        <canvas
-          id="line-width-indicator"
-          width="400px"
-          height="400px"
-          style="border: 1px solid #000000;"></canvas>
-      </span>
-      <span id="color-palette"></span>
+    <div class="container">
+      <div id="canvas-color-area">
+        <div id="canvas-area">
+          <span id="layerd-canvas-area">
+            <canvas
+              id="draw-area"
+              width="800px"
+              height="550px"
+              style="border: 4px solid #3DB2FF; border-radius: 1.5rem; background-color: #ffffff; position: absolute;">
+            </canvas>
+            <canvas
+              id="line-width-indicator"
+              width="800px"
+              height="550px"
+              style="border: 4px solid #3DB2FF;background-color: #ffffff; border-radius: 1.5rem;">
+            </canvas>
+          </span>
+          <span>
+          <span id="color-palette"></span>
+            <div id="palette">
+              <span class="tools">
+                Pen
+                <input
+                  id="range-selector"
+                  type="range"
+                  value="5.0"
+                  min="1.0"
+                  max="30"
+                  step="0.1">
+                <span id="line-width">5.0</span>
+              </span>
+              <button id="eraser-button">ERASER</button>
+              <button id="clear-button">ALL CLEAR</button>
+            </div>
+          </span>
+        </div>
+      </div>
     </div>
-    <div>
-      Pen
-      <input
-        id="range-selector"
-        type="range"
-        value="5"
-        min="1"
-        max="10"
-        step="0.1">
-      <span id="line-width">5</span>
-    </div>
-
-    <div>
-      <button id="eraser-button">ERASER</button>
-    </div>
-    <div>
-      <button id="clear-button">ALL CLEAR</button>
-    </div>
-
-    <script src="./js/colorjoe.min.js"></script>
-    <script src="./js/main.js"></script>
   </body>
   </html>

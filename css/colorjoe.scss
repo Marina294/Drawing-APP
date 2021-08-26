@@ -17,10 +17,10 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 #canvas-color-area {
@@ -83,34 +83,35 @@ h1 {
   width: 200px;
 }
 
-input[type=range] {
+input[type=range]{
   -webkit-appearance: none;
-}
 
-input[type=range]::-webkit-slider-runnable-track {
-  width: 300px;
-  height: 5px;
-  background: #FFEDDA;
-  border: none;
-  border-radius: 3px;
-}
+  &::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #FFEDDA;
+    border: none;
+    border-radius: 3px;
+  }
 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #FF2442;
-  margin-top: -4px;
-}
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FF2442;
+    margin-top: -4px;
+  }
 
-input[type=range]:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #FFEDDA;
+  &:focus::-webkit-slider-runnable-track {
+    background: #FFEDDA;
+  }
+
 }
 
 .colorPicker {
