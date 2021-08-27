@@ -3,6 +3,22 @@ body {
   background-color: #3DB2FF;
 }
 
+footer {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 0.8em;
+  font-weight: 200;
+  margin-top: 1em;
+  text-align: center;
+  padding: 1em;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #ffee00;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
   margin: 0rem 1rem 1rem 1rem;
